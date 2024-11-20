@@ -1,0 +1,17 @@
+HELP.md
+.gradle
+build/
+src/main/resources/application.yml
+src/test/resources/application-test.yml
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
