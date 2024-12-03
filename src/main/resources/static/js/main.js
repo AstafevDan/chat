@@ -35,7 +35,6 @@ function onConnected() {
     stompClient.subscribe(`/user/${nickname}/queue/messages`, onMessageReceived);
     stompClient.subscribe(`/user/public`, onMessageReceived);
 
-    // register the connected user
     stompClient.send("/app/user.addUser",
         {},
         JSON.stringify({nickName: nickname, fullName: fullname, status: 'ONLINE'})
